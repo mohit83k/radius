@@ -1,0 +1,13 @@
+# File: docker/Dockerfile.radclient
+FROM debian:bookworm
+
+RUN apt-get update && \
+    apt-get install -y freeradius-utils netcat-openbsd && \
+    apt-get clean
+
+WORKDIR /test
+
+COPY testdata/ ./
+RUN chmod +x /test/test_concurrent_requests.sh
+
+ENTRYPOINT ["/bin/bash"]
