@@ -1,0 +1,8 @@
+.git
+.gitignore
+bin/
+*.log
+*.env
+Dockerfile.*
+docker-compose.yml
+last_test.go 
