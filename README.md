@@ -123,7 +123,6 @@ environment:
 |------------------|-------------------------------------------------------------------|
 | `REDIS_ADDR`     | Redis address to subscribe to                                     |
 | `REDIS_PASSWORD` | Redis password (if any)                                           |
-| `REDIS_DB`       | Redis DB index                                                    |
 | `LOG_FILE_PATH`  | File where Redis logger writes accounting update logs             |
 
 ---
