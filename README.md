@@ -95,7 +95,6 @@ environment:
   - RADIUS_SECRET=testing123
   - REDIS_ADDR=redis:6379
   - REDIS_PASSWORD=
-  - REDIS_DB=0
   - SERVER_PORT=:1813
   - LOG_FILE_PATH=/var/log/radius_server.log
 ```
@@ -105,7 +104,6 @@ environment:
 | `RADIUS_SECRET`  | Shared secret used to parse and authenticate incoming RADIUS packets |
 | `REDIS_ADDR`     | Redis server address used for storing accounting records            |
 | `REDIS_PASSWORD` | Password for Redis (leave empty if not used)                        |
-| `REDIS_DB`       | Redis database index (usually 0)                                    |
 | `SERVER_PORT`    | UDP port the server listens on, must include colon (e.g., `:1813`)  |
 | `LOG_FILE_PATH`  | Log file path inside container for writing logs                     |
 
