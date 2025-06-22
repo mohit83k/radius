@@ -33,3 +33,4 @@ go.work.sum
 
 #intermediate file 
 last_test.log
+./docker/persisted_logs

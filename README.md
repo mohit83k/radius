@@ -163,6 +163,7 @@ You can also override these variables using a `.env` file in the root of the pro
    ```bash
    radclient -x radius-controlplane:1813 acct testing123 < test_acct_start.txt
    ```
+5. Check logs in `docker/persisted_logs`
 
 ---
 
